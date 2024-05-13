@@ -13,6 +13,7 @@ The `CanvasOptions` interface represents the options for configuring the game ca
 interface CanvasOptions {
   parent?: HTMLElement;
   size?: Point;
+  autoSize?: boolean;
   imageSmoothingEnabled?: boolean;
   imageSmoothingQuality?: ImageSmoothingQuality;
   backgroundColor?: string;
@@ -37,6 +38,15 @@ The parent element to insert the canvas.
   - *Default value: `new Point(800, 600)`*
 
 The size of the canvas.
+
+
+### autoSize
+
+- Type: `boolean` (optional)
+  - *Default value: `true`*
+
+Determines whether the canvas should automatically resize to fit the parent element.
+
 
 ### imageSmoothingEnabled
 

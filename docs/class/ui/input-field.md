@@ -72,10 +72,32 @@ The area of the input field.
 
 ## Methods
 
+### getInputElement
+
+```ts title="prototype"
+getInputElement(): HTMLInputElement
+```
+
+Get the HTMLInputElement of the input field. It's useful for manipulating the input element directly.
+
+#### Return
+
+`HTMLInputElement`
+
+#### Example
+
+```ts
+const inputField = new InputField(...);
+const input = inputField.getInputElement();
+input.value = "Hi!";
+```
+
+<br/>
+
 ### setOptions
 
 ```ts title="prototype"
-etOptions(options: InputFieldOptions): void
+setOptions(options: InputFieldOptions): void
 ```
 
 Set the options for the input field.
